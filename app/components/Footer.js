@@ -159,17 +159,16 @@ export default function Footer() {
         <p className="text-xs text-gray-400">
           © 2026 Matta Mottors Uganda. All rights reserved.
         </p>
-        <div className="flex gap-6">
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              className="text-[11px] font-bold tracking-[0.18em] uppercase text-gray-400 hover:text-[var(--color-brand)] transition-colors no-underline"
-            >
-              {s.label}
-            </a>
-          ))}
-        </div>
+        <a
+          href="http://raymonjohns.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="text-xs text-gray-400">
+            Built with ❤️ by{" "}
+            <span style={{ color: "var(--color-brand)" }}>RaymonJohns</span>
+          </p>
+        </a>
       </div>
     </footer>
   );
